@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#header{    
+    padding-top: 25px;
+    background-image: url('/cloud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+#buttons{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h1{
+    color: aliceblue;
+}
+h2{
+    font-size: 10em;
+    margin-left: auto;
+    margin-right: auto;    
+}
+#randomButton {
+    margin-right: 10px;
+    background-color: #7b52da; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    transition-duration: .4s;
+    
+}
+#randomButton:hover{
+    background-color: #7a4caf; /* Green */
+    color: white;
+}
+
+
+#selector{
+    background-color: #7b52da; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    transition-duration: .4s;
+}
+#selctor option{
+    text-align: center;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    background-color: rgb(79, 151, 211);
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    #buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #randomButton{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #header{    
+        min-height: 90vh;
+    }
+    footer{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
